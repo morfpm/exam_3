@@ -1,0 +1,13 @@
+// Main
+@import "reset.scss";
+@import "fonts.scss";
+@import "variables";
+@import "mixins.scss";
+
+// Common
+@import"common/general.scss";
+@import"common/typography.scss";
+
+// Parts
+@import "parts/hero.scss";
+@import "parts/about.scss";

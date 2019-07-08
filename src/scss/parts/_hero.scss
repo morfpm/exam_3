@@ -1,0 +1,186 @@
+.hero{
+  min-height: 100vh;
+  max-width: 100vw;
+  background-color: $color-gray;
+
+  &-logo{
+    position: absolute;
+    top: 29%;
+    left: 49.3%;
+    z-index: 3;
+    //mix-blend-mode: hard-light;
+
+    &__shadow{
+      @include logoSign(90px, rgba(221, 221, 222, 0.2));
+      position: absolute;
+      bottom: 40%;
+      left: -44%;
+      //z-index: 1;
+    }
+
+    &__title{
+      @include logoSign(64px, $color-blue);
+
+      &:after{
+        color: rgb(0, 255, 255);
+        mix-blend-mode: difference;
+      }
+      //mix-blend-mode: difference;
+    }
+
+  }
+
+  &-info{
+
+    &__title{
+      padding-top: 15%;
+    }
+
+    &__links{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 72px;
+    }
+
+    &__contact{
+      display: inline-block;
+      margin-left: 3.75%;
+      //margin-left: 13px;
+      @include linkAsButton(15px 17px);
+
+      &:hover{
+        cursor: pointer;
+        background-color: $color-red;
+        color: $color-white;
+        transition: all .3s ease;
+      }
+    }
+
+    &__social{
+      margin-right: 170px;
+
+      & li{
+        display: inline-block;
+        margin-right: 29px;
+        font-size: 14px;
+
+        & a{
+          text-decoration: none;
+
+          & :hover{
+            color: $color-red;
+            transition: all .3s ease;
+          }
+        }
+
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+    }
+
+    &__img{
+      max-height: 400px;
+      max-width: 394px;
+      box-shadow: -50px 80px 200px rgba(0, 0, 0, 0.15);
+
+      & img{
+        height: 100%;
+        width: auto;
+      }
+    }
+
+    &__up{
+      margin-top: 40px;
+      z-index: 2;
+    }
+  }
+
+  &__lines{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 15vw;
+    //width: 186px;
+    left: 10.5vw;
+    min-height: 100vh;
+    background-color: transparent;
+  }
+
+  &__ribbon{
+    height: 100vh;
+    width: 5.5vw;
+    //width: 70px;
+    background-color: $color-gray;
+
+    &--first{
+      padding-right: 46px;
+    }
+
+    &--last:before{
+      display: block;
+      position: relative;
+      top: 200px;
+      left: -176px;
+      //margin-left: 44px;
+      content: '';
+      height: 197px;
+      width: 3px;
+      background-color: $color-dark-gray;
+    }
+  }
+}
+
+.hero__bg{
+  margin: 0;
+  padding: 0;
+  background-image: url('#{$path-img}hero-bg.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.navigator{
+  padding-top: 61px;
+  display: flex;
+  justify-content: space-between;
+  font-family: $font-lato;
+  font-size: 18px;
+
+  &__img{
+    z-index: 1;
+  }
+
+  &__menu{
+    display: flex;
+
+    & li{
+      margin-right: 30px;
+
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+
+    & a{
+      text-decoration: none;
+
+      &:hover{
+        color: $color-red;
+        transition: all .3s ease;
+      }
+    }
+
+    &:before{
+      display: block;
+      margin-right: 60px;
+      content: '';
+      height: 3px;
+      width: 100px;
+      background-color: $color-dark-gray;
+    }
+
+  }
+}

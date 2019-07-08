@@ -1,0 +1,22 @@
+@mixin linkAsButton($paddings){
+  text-transform: uppercase;
+  color: $color-black;
+  font-size: 14px;
+  letter-spacing: 4px;
+  line-height: 19px;
+  font-weight: 400;
+  font-family: $font-futura;
+  border: 1px solid $color-red;
+  padding: $paddings;
+  background: $color_white;
+}
+
+@mixin logoSign($fontSize, $fontColor){
+  font: $font-futura;
+  text-transform: uppercase;
+  font-size: $fontSize;
+  font-weight: 900;
+  line-height: 70px;
+  letter-spacing: -1px;
+  color: $fontColor;
+}
