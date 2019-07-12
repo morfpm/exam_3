@@ -15,7 +15,6 @@
       position: absolute;
       bottom: 40%;
       left: -44%;
-      //z-index: 1;
     }
 
     &__title{
@@ -50,10 +49,7 @@
       @include linkAsButton(15px 17px);
 
       &:hover{
-        cursor: pointer;
-        background-color: $color-red;
-        color: $color-white;
-        transition: all .3s ease;
+        @include BtnHoverEffect;
       }
     }
 
@@ -69,8 +65,7 @@
           text-decoration: none;
 
           & :hover{
-            color: $color-red;
-            transition: all .3s ease;
+            @include linkHoverEffect();
           }
         }
 
@@ -119,15 +114,7 @@
     }
 
     &--last:before{
-      display: block;
-      position: relative;
-      top: 200px;
-      left: -176px;
-      //margin-left: 44px;
-      content: '';
-      height: 197px;
-      width: 3px;
-      background-color: $color-dark-gray;
+      @include vertLine(200px, -176px);
     }
   }
 }
@@ -168,8 +155,7 @@
       text-decoration: none;
 
       &:hover{
-        color: $color-red;
-        transition: all .3s ease;
+        @include linkHoverEffect();
       }
     }
 

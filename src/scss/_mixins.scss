@@ -20,3 +20,57 @@
   letter-spacing: -1px;
   color: $fontColor;
 }
+
+@mixin BtnHoverEffect(){
+  cursor: pointer;
+  background-color: $color-red;
+  color: $color-white;
+  transition: all .3s ease;
+}
+@mixin linkHoverEffect(){
+  cursor: pointer;
+  color: $color-red;
+  transition: all .3s ease;
+}
+
+@mixin vertLine($topPos, $leftPos){
+  display: block;
+  position: relative;
+  top: $topPos;
+  left: $leftPos;
+  //top: 200px;
+  //left: -176px;
+  content: '';
+  height: 197px;
+  width: 3px;
+  background-color: $color-dark-gray;
+}
+
+@mixin titleLine($marginLine){
+  display: inline-block;
+  content: '';
+  height: 3px;
+  width: 100px;
+  vertical-align: middle;
+  background-color: $color-blackest;
+  opacity: .25;
+  margin: $marginLine;
+}
+
+@mixin sectionTitle(){
+  font-family: $font-lato;
+  color: $color-blackest;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 700;
+
+  &:before{
+    @include titleLine(0 38px 0 0);
+  }
+
+  &:after{
+    @include titleLine(0 0 0 38px);
+  }
+}

@@ -11,3 +11,7 @@
   width: 1060px;
   margin: 0 auto;
 }
+
+.section__title{
+  @include sectionTitle();
+}

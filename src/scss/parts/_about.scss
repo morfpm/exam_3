@@ -1,4 +1,52 @@
-.about{
-  height: 1000px;
+.section-about {
   background-color: $color-gray;
+  font-family: $font-lato;
+  color: $color-blackest;
+
+  &--title{
+    padding: 100px 0 59px;
+  }
+}
+
+.about__team{
+  padding-top: 54px;
+}
+
+.about-article__title{
+    margin-bottom: 13px;
+  }
+
+.about__person-info{
+  display: flex;
+  justify-content: center;
+
+}
+
+.person-info{
+
+  &__caption{
+    background-color: $color-white;
+    padding: 40px;
+  }
+
+  &__photo {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__name{
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &__about{
+    overflow: auto;
+    text-overflow: ellipsis;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
