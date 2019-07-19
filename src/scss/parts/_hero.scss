@@ -11,12 +11,16 @@
     min-height: 100vh;
   }
 
+  &__logo{
+    display: block;
+    position: relative;
+  }
+
   &__logo--tm{
     z-index: 5;
     position: absolute;
-    top: 130px;
-    right: 314px;
-    margin: 10px;
+    top: 25px;
+    right: 178px;
     text-transform: uppercase;
     color: $color-blue;
     font-family: $font-futura;
@@ -24,8 +28,8 @@
     line-height: 70px;
 
     @media (max-width: $phone-vp) {
-      top: 160px;
-      right: 177px;
+      top: 0;
+      right: 157px;
       font-size: 36px;
     }
 
@@ -33,8 +37,8 @@
 
   &__logo--shadow{
     position: absolute;
-    top: 125px;
-    right: 310px;
+    top: 15px;
+    right: 165px;
     font-family: $font-futura;
     text-transform: uppercase;
     font-size: 90px;
@@ -43,8 +47,8 @@
     color: rgba(221, 221, 222, 0.2);
 
     @media (max-width: $phone-vp) {
-      top: 155px;
-      right: 140px;
+      top: -10px;
+      right: 110px;
       font-size: 48px;
     }
 
