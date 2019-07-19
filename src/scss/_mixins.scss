@@ -33,17 +33,21 @@
   transition: all .3s ease;
 }
 
-@mixin vertLine($topPos, $leftPos){
+@mixin heroLines($topPos, $leftPos, $heightLine, $widthLine){
   display: block;
   position: relative;
   top: $topPos;
   left: $leftPos;
-  //top: 200px;
-  //left: -176px;
   content: '';
-  height: 197px;
-  width: 3px;
+  height: $heightLine;
+  width: $widthLine;
   background-color: $color-dark-gray;
+  //background-color: red;
+  //
+  //@media (max-width: $phone-vp) {
+  //  height: 100px;
+  //}
+
 }
 
 @mixin titleLine($marginLine){
@@ -55,22 +59,42 @@
   background-color: $color-blackest;
   opacity: .25;
   margin: $marginLine;
+
+  @media (max-width: $phone-vp) {
+    width: 75px;
+  }
+
 }
 
 @mixin sectionTitle(){
+  display: block;
+  text-align: center;
   font-family: $font-lato;
   color: $color-blackest;
-  text-align: center;
   text-transform: uppercase;
   font-size: 24px;
   line-height: 29px;
   font-weight: 700;
 
+  @media (max-width: $phone-vp) {
+    font-size: 18px;
+  }
+
   &:before{
     @include titleLine(0 38px 0 0);
+
+    @media (max-width: $phone-vp) {
+      @include titleLine(0 9px 0 0);
+    }
+
   }
 
   &:after{
     @include titleLine(0 0 0 38px);
+
+    @media (max-width: $phone-vp) {
+      @include titleLine(0 0 0 9px);
+    }
+
   }
 }

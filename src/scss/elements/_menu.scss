@@ -1,0 +1,80 @@
+.menu{
+  padding-top: 61px;
+  display: flex;
+  justify-content: space-between;
+  font-family: $font-lato;
+  font-size: 18px;
+
+  @media (max-width: $phone-vp) {
+    padding: 34px 0 93px;
+  }
+
+
+  &__open-btn{
+    display: none;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+
+    @media (max-width: $phone-vp) {
+      display: block;
+    }
+  }
+
+  &__close-btn{
+    display: none;
+    border: none;
+    padding: 10px;
+    background-color: transparent;
+
+    @media (max-width: $phone-vp) {
+      //display: block;
+    }
+  }
+
+  &__img{
+    z-index: 1;
+
+    & img {
+
+      @media (max-width: $phone-vp) {
+        max-height: 28px;
+        max-width: 95px;
+      }
+    }
+
+    //& :before{
+    //  content: '';
+    //  height: 100vh;
+    //  width: 5.5vw;
+    //  background-color: $color-gray;
+    //  border: 1px solid blue;
+    //}
+
+  }
+
+  &__list{
+    display: flex;
+
+    @media (max-width: $phone-vp) {
+      display: none;
+    }
+
+    & li{
+      margin-right: 30px;
+
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+
+    & a{
+      text-decoration: none;
+
+      &:hover{
+        @include linkHoverEffect();
+      }
+    }
+
+  }
+}

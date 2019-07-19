@@ -1,15 +1,26 @@
 .join-us{
-  height: 157px;
+  //height: 157px;
   max-width: 100vw;
   background-color: $color-dark-gray;
   text-align: center;
   font-size: 14px;
+
+  //@media (max-width: $phone-vp) {
+  //  height: 116px;
+  //}
 
   &__title{
     padding: 26px 0 24px;
     font-family: $font-lato;
     font-size: 18px;
     line-height: 22px;
+
+    @media (max-width: $phone-vp) {
+      font-size: 14px;
+      line-height: 17px;
+      padding: 20px 0 6px;
+    }
+
   }
 
   &__input{
@@ -17,6 +28,22 @@
     height: 44px;
     border: transparent;
     padding: 0 12px;
+    caret-color: rgba(0, 0, 0, 0.5);
+
+    @media (max-width: $phone-vp) {
+      width: 155px;
+      height: 35px;
+    }
+
+    &:invalid{
+      border: 1px solid $color-red;
+    }
+
+    &:hover{
+      &::placeholder{
+        line-height: 35px;
+      }
+    }
 
     &::placeholder{
       font-size: 14px;
@@ -24,11 +51,24 @@
       color: $color-blackest;
       opacity: .5;
       text-indent: -12px;
+
+      @media (max-width: $phone-vp) {
+        font-size: 12px;
+        line-height: 35px;
+        text-indent: -6px;
+      }
+
     }
 
     &--block{
       display: flex;
       justify-content: center;
+      padding-bottom: 43px;
+
+      @media (max-width: $phone-vp) {
+        padding-bottom: 35px;
+      }
+
     }
   }
 
@@ -40,7 +80,13 @@
     height: 44px;
     border: none;
     vertical-align: middle;
-    //font-size: 14px;
     cursor: pointer;
+
+    @media (max-width: $phone-vp) {
+      font-size: 12px;
+      line-height: 17px;
+      width: 45px;
+      height: 35px;
+    }
   }
 }

@@ -1,15 +1,22 @@
 * {
-  //padding: 0;
   box-sizing: border-box;
-  //background-color: $color-gray;
-  //font-family: $font-lato;
   color: $color-black;
   font-size: 18px;
+
+  @media (max-width: $phone-vp) {
+    font-size: 14px;
+  }
+
 }
 
 .grid{
-  width: 1060px;
+  max-width: 1060px;
   margin: 0 auto;
+
+  @media (max-width: $phone-vp) {
+    max-width: 340px;
+  }
+
 }
 
 .section__title{

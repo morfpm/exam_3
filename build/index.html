@@ -8,6 +8,7 @@
     <title>AXIOMA project</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
 
 </head>
@@ -16,57 +17,58 @@
     <section class="hero">
          <div class="hero__bg">
 
-             <div class="grid">
+             <nav class="menu grid">
 
-                 <div class="hero__lines">
-                     <div class="hero__ribbon hero__ribbon--first"></div>
-                     <div class="hero__ribbon hero__ribbon--last"></div>
+                 <div class="menu__img">
+                     <a href="#">
+                         <img src="img/logo.svg" alt="AXIOMA project">
+                     </a>
                  </div>
 
-                 <nav class="navigator">
-                     <div class="navigator__img">
-                         <a href="#">
-                             <img src="img/logo.svg" alt="AXIOMA project">
-                         </a>
+                 <button class="menu__open-btn js-menu-open-btn">
+                     <i class="fas fa-bars"></i>
+                 </button>
+
+                 <button class="menu__close-btn js-menu-close-btn">
+                     Close
+                     <i class="fas fa-times"></i>
+                 </button>
+
+                 <ul class="menu__list">
+                     <li><a href="#home_anchor"><div class="menu__item"></div>Home</a></li>
+                     <li><a href="#about_anchor"><div class="menu__item"></div>About us</a></li>
+                     <li><a href="#projects_anchor"><div class="menu__item"></div>Projects</a></li>
+                     <li><a href="#contacts_anchor"><div class="menu__item"></div>Contacts</a></li>
+                 </ul>
+             </nav>
+
+             <div class="hero__content grid">
+
+                 <div class="hero__info">
+
+                     <div class="hero__lines">
+                         <div class="hero__ribbon hero__ribbon--first"></div>
+                         <div class="hero__ribbon"></div>
                      </div>
 
-                     <ul class="navigator__menu">
-                         <li><a href="#home_anchor"><div class="menu__item--selector"></div>Home</a></li>
-                         <li><a href="#about_anchor"><div class="menu__item--selector"></div>About us</a></li>
-                         <li><a href="#projects_anchor"><div class="menu__item--selector"></div>Projects</a></li>
-                         <li><a href="#contacts_anchor"><div class="menu__item--selector"></div>Contacts</a></li>
-                     </ul>
-                 </nav>
+                    <h4 class="hero-info__title">interior design</h4>
+                    <p class="hero-info__description">The AXIOMA Project team creates timeless, stylish interior spaces based on a respect for modern sophistication.</p>
+                    <div class="hero-info__links">
+                        <a class="hero-info__contact">contact us</a>
+                        <ul class="hero-info__social">
+                            <li><a href="#"><span class="icon-twitter"></span></a></li>
+                            <li><a href="#"><span class="icon-facebook"></span></a></li>
+                            <li><a href="#"><span class="icon-instagram"></span></a></li>
+                        </ul>
+                    </div>
+                 </div>
 
-             </div>
-
-             <div class="hero-logo">
-                 <p class="hero-logo__shadow">axioma</p>
-                 <p class="hero-logo__title">axioma</p>
-             </div>
-
-             <div class="hero-info grid">
-
-                 <div class="row">
-                     <div class="col-xs-6 hero-info__up">
-                         <h4 class="hero-info__title">interior design</h4>
-                         <p class="hero-info__description">The AXIOMA Project team creates timeless, stylish interior spaces based on a respect for modern sophistication.</p>
-                         <div class="hero-info__links">
-                             <a class="hero-info__contact">contact us</a>
-                             <ul class="hero-info__social">
-                                 <li><a href="#"><span class="icon-twitter"></span></a></li>
-                                 <li><a href="#"><span class="icon-facebook"></span></a></li>
-                                 <li><a href="#"><span class="icon-instagram"></span></a></li>
-                             </ul>
-                         </div>
+                 <div class="hero__info">
+                     <div class="hero__info--placeholder">
+                         <p class="hero__logo--shadow">axioma</p>
+                         <p class="hero__logo--tm">axioma</p>
+                         <img src="img/Placeholder_.jpg" alt="">
                      </div>
-
-                     <div class="col-xs-offset-1 col-xs-4 hero-info__up">
-                         <div class="hero-info__img">
-                             <img src="img/Placeholder_.jpg" alt="">
-                         </div>
-                     </div>
-
                  </div>
 
              </div>
@@ -78,33 +80,33 @@
             <h2 class="section-about--title section__title">about us</h2>
             <h3 class="about-article__title">AXIOMA project</h3>
             <p class="about-article__paragraph">We believe better things are created by great designers. We have been proud to partner only with the world's best designers and emerging talent to develop useful, aesthetic and unique objects exclusively for us.</p>
-            <div class="about__team">
-                <div class="row">
-                    <div class="col-md-6">
-                        <figure class="about__person-info">
-                            <div class="person-info__photo">
-                                <img src="img/philippe_malouin.jpg" alt="Philippe Malouin">
-                            </div>
-                            <figcaption class="person-info__caption">
-                                <h5 class="person-info__name">PHILIPPE MALOUIN / UK</h5>
-                                <p class="person-info__about">Philippe—a Canada native who’s lived and studied in Montreal, Paris and Holland—believes that good ideas emerge from the act of creating and doing. He creates conceptual designs that balance finesse, functionality and a fondness for risk.</p>
-                            </figcaption>
-                        </figure>
-                    </div>
 
-                    <div class="col-md-6">
-                        <figure class="about__person-info">
-                            <div class="person-info__photo">
-                                <img src="img/felicia_ferrone.jpg" alt="Felicia Ferrone">
-                            </div>
-                            <figcaption class="person-info__caption">
-                                <h5 class="person-info__name">FELICIA FERRONE / US</h5>
-                                <p class="person-info__about">After earning a degree in architecture, Felicia transplanted to Milan where she worked with design luminaries. She currently works as Director of Graduate Studies in Industrial Design at University of Illinois at Chicago, and produces work under her brand, fferrone.</p>
-                            </figcaption>
-                        </figure>
-                    </div>
+            <div class="about__personal">
+                <div class="about__team-card">
+                    <figure class="about__person-info">
+                        <div class="person-info__photo">
+                            <img src="img/philippe_malouin.jpg" alt="Philippe Malouin">
+                        </div>
+                        <figcaption class="person-info__caption">
+                            <h5 class="person-info__name">PHILIPPE MALOUIN / UK</h5>
+                            <p class="person-info__about">Philippe—a Canada native who’s lived and studied in Montreal, Paris and Holland—believes that good ideas emerge from the act of creating and doing. He creates conceptual designs that balance finesse, functionality and a fondness for risk.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="about__team-card">
+                    <figure class="about__person-info">
+                        <div class="person-info__photo">
+                            <img src="img/felicia_ferrone.jpg" alt="Felicia Ferrone">
+                        </div>
+                        <figcaption class="person-info__caption">
+                            <h5 class="person-info__name">FELICIA FERRONE / US</h5>
+                            <p class="person-info__about">After earning a degree in architecture, Felicia transplanted to Milan where she worked with design luminaries. She currently works as Director of Graduate Studies in Industrial Design at University of Illinois at Chicago, and produces work under her brand, fferrone.</p>
+                        </figcaption>
+                    </figure>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -203,12 +205,12 @@
     <section class="contacts">
         <h2 class="contacts__section--title section__title">our contacts</h2>
         <div class="grid">
-            <div class="row">
-                <div class="col-xs-7">
+            <div class="contacts__content">
+                <div class="contacts__maps">
                     <div id="js-maps" class="maps"></div>
                 </div>
 
-                <div class="col-xs-offset-1 col-xs-3">
+                <div class="contacts__info">
                     <div class="contacts__hero-logo">
                         <a href="#">
                             <img src="img/logo.svg" alt="AXIOMA project">
@@ -223,11 +225,11 @@
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="contacts__unknown">
-                <div class="contacts__line"></div>
-                <h2>WE’VE BEEN AROUND THE BLOCK</h2>
-            </div>
+        <div class="contacts__unknown">
+            <div class="contacts__line"></div>
+            <h2>WE’VE BEEN AROUND THE BLOCK</h2>
         </div>
     </section>
 
@@ -259,9 +261,9 @@
         </div>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/script.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDkM5MDXin3HRhDwEKyu95ASZysmRn_F4&callback=initMap" async defer></script>
+    <script src="js/script.min.js"></script>
 
 </body>
 </html>

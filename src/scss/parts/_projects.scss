@@ -5,6 +5,12 @@
   color: $color-blackest;
   background-color: $color-gray;
 
+  @media (max-width: $phone-vp) {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+
   &__row--margin{
     margin-bottom: 15px;
   }
@@ -16,10 +22,22 @@
     padding: 26px 40px;
     text-align: center;
     border: 1px solid $color-blackest;
+
+    @media (max-width: $phone-vp) {
+      width: 250px;
+      height: 248px;
+      margin: 42px auto;
+    }
+
   }
 
   &--title{
     padding: 84px 0 49px;
+    @media (max-width: $phone-vp) {
+      padding: 68px 0 32px;
+    }
+
+
   }
 
   &__container{
@@ -53,11 +71,21 @@
     position: absolute;
 
     &:before{
-      @include vertLine(-30px, 420px);
+      @include heroLines(165px, -115px, 197px, 3px);
+
+      @media (max-width: $phone-vp) {
+        @include heroLines(70px, -87px, 150px, 3px);
+      }
+
     }
 
     &:after{
-      @include vertLine(-31px, -115px);
+      @include heroLines(-225px, 423px, 197px, 3px);
+
+      @media (max-width: $phone-vp) {
+        @include heroLines(-177px, 250px, 150px, 3px);
+      }
+
     }
   }
 
@@ -68,7 +96,12 @@
   &__item{
     padding-top: 30px;
 
-     & a{
+    @media (max-width: $phone-vp) {
+      padding-top: 20px;
+    }
+
+
+    & a{
        text-decoration: none;
        &:hover{
          @include linkHoverEffect();
